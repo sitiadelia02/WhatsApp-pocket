@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Pocket</title>
+    <link rel="stylesheet" href="transfer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h2>WhatsApp</h2>
+    </header>
+    <aside class="sidebar">
+      <div class="top-icon">
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="bx bx-message-detail"></i></a>
+          </li>
+          <li>
+            <a href="index.html"><i class="bx bx-home"></i></a>
+          </li>
+          <li>
+            <a href="splitbill.html"><i class="bx bx-receipt"></i></a>
+          </li>
+          <li>
+            <a href="transfer.html"><i class="bx bx-transfer"></i></a>
+          </li>
+          <li>
+            <a href="setting"><i class="bx bx-cog"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="spacer"></div>
+
+      <div class="profile">
+        <img src="image/profil.jpg" alt="foto profil" />
+      </div>
+    </aside>
+    <section class="transfer">
+      <main class="content">
+        <div class="transfer-box">
+          <!-- Bank Tujuan -->
+          <div class="transfer-item">
+            <i class="bx bxs-bank"></i>
+            <label for="bank">Bank Tujuan</label>
+            <select id="bank" name="bank">
+              <option value="">Pilih Bank</option>
+              <option value="bca">Bank BCA</option>
+              <option value="mandiri">Bank Mandiri</option>
+              <option value="bni">Bank BNI</option>
+              <option value="bri">Bank BRI</option>
+            </select>
+          </div>
+
+          <!-- Metode Transfer -->
+          <div class="transfer-item">
+            <i class="bx bx-transfer-alt"></i>
+            <label for="metode">Metode Transfer</label>
+            <select id="metode" name="metode">
+              <option value="">Pilih Metode</option>
+              <option value="atm">ATM</option>
+              <option value="mbanking">Mobile Banking</option>
+              <option value="ibanking">Internet Banking</option>
+            </select>
+          </div>
+
+          <!-- Nomor Tujuan -->
+          <div class="transfer-item">
+            <i class="bx bx-money"></i>
+            <label for="tujuan">Nomor Tujuan</label>
+            <select id="tujuan" name="tujuan">
+              <option value="">Pilih No Rekening</option>
+              <option value="rek1">1234567890 - BCA</option>
+              <option value="rek2">0987654321 - Mandiri</option>
+            </select>
+          </div>
+
+          <!-- Opsi pilihan -->
+          <!-- Nomor Rekening -->
+          <div class="transfer-item-2">
+            <i class="bx bx-money"></i>
+            <label for="noRek">No. Rekening</label>
+            <input
+              type="text"
+              id="noRek"
+              name="noRek"
+              placeholder="Masukkan No. Rekening"
+            />
+          </div>
+
+          <!-- Nomor Handphone -->
+          <div class="transfer-item-2">
+            <i class="bx bx-phone"></i>
+            <label for="noHp">No. Handphone</label>
+            <input
+              type="text"
+              id="noHp"
+              name="noHp"
+              placeholder="Masukkan No. HP"
+            />
+          </div>
+
+          <!-- Gmail -->
+          <div class="transfer-item-2">
+            <i class="bx bx-envelope"></i>
+            <label for="gmail">Gmail</label>
+            <input
+              type="email"
+              id="gmail"
+              name="gmail"
+              placeholder="Masukkan Gmail"
+            />
+          </div>
+          <div class="buttons">
+            <a href="transaksi.html" class="btn next">Kirim</a>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

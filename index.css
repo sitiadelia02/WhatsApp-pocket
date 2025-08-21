@@ -1,0 +1,187 @@
+
+:root {
+    --first-color: #f8f2e6;
+    --second-bg-color: #075e54;
+    --third-color: #ffffff;
+    --four-color: #77ff00;
+    --text-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--first-color);
+    color: var(--text-color);
+}
+
+.header{
+    background-color: var(--second-bg-color);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--second-bg-color);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li{
+    margin: 20px 0;
+}
+
+.sidebar ul li a i {
+    font-size: 24px;
+    color: var(--third-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i:hover{
+    color: var(--first-color);
+}
+.top-icon i{
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.spacer{
+    flex: 100%;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.header{
+    height: 35px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.header h2{
+    margin-left: 60px;
+    display: flex;
+    color: var(--third-color);
+}
+
+.saldo {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 230px;
+    background: var(--third-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 3px var(--four-color);
+}
+
+.saldo h2{
+    margin-left: 20px;
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+
+.saldo h3{
+    margin-left: 20px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.saldo h4{
+    margin-left: 20px;
+    font-size: 20px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saldo h4 a{
+    color: var(--four-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.riwayat {
+    margin-left: 300px;
+    margin-right: 230px;
+    background: var(--third-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 3px var(--four-color);
+}
+
+.riwayat ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transaksi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.transaksi i {
+  font-size: 40px;  /* icon lebih besar */
+  margin-right: 10px;
+  color: #444;
+}
+
+.detail {
+  flex: 1; /* biar isi deskripsi ngambil ruang tengah */
+}
+
+.detail h3 {
+  margin: 0;
+  font-size: px;
+}
+
+.detail p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.jumlah {
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: right;
+}
+
+.jumlah.plus {
+  color: green;
+}
+
+.jumlah.minus {
+  color: red;
+}

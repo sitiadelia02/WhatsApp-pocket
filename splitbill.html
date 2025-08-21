@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splitbill - WhatsApp Pocket</title>
+  <link rel="stylesheet" href="splitbill.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h2>WhatsApp</h2>
+  </header>
+
+  <aside class="sidebar">
+    <div class="top-icon">
+      <ul class="nav-links">
+        <li><a href="index.html"><i class='bx bx-message-detail'></i></a></li>
+        <li><a href="index.html"><i class='bx bx-home'></i></a></li>
+        <li><a href="splitbill.html" class="active"><i class='bx bx-receipt'></i></a></li>
+        <li><a href="transfer.html"><i class='bx bx-transfer'></i></a></li>
+        <li><a href="setting.html"><i class='bx bx-cog'></i></a></li>
+      </ul>
+    </div>
+    <div class="spacer"></div>
+    <div class="profile">
+      <img src="image/profil.jpg" alt="foto profil">
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="splitbill">
+      <h2>Split Bill</h2>
+      <p>Ada tagihan? Foto bon tagihan & tentukan jumlah yang harus dibayar per orang!</p>
+      <a href="#" class="tutorial-link">Lihat cara kerja</a>
+
+      <div class="scan-area">
+        <div class="image">
+          <i class='bx bx-scan'></i>
+        </div>
+
+      <!-- Checkbox tersembunyi -->
+<input type="checkbox" id="showFoto" hidden>
+
+<div class="photo-options">
+  <label for="showFoto" class="photo-btn">
+    <div class="bulat"><i class='bx bx-image-add'></i></div>
+    <p>Pilih Foto</p>
+  </label>
+
+  <label for="showFoto" class="photo-btn">
+    <div class="bulat"><i class='bx bx-camera'></i></div>
+    <p>Ambil Foto</p>
+  </label>
+</div>
+
+    <section class="hasil-struk">
+        <img id="preview" src="image/struk.jpg" alt="">
+        <div class="struk"><a href="struk.html" class="btn-primary">Selanjutnya</a></div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+
+:root {
+    --first-color: #f8f2e6;
+    --second-bg-color: #075e54;
+    --third-color: #ffffff;
+    --four-color: #77ff00;
+    --text-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--first-color);
+    color: var(--text-color);
+}
+
+.header{
+    background-color: var(--second-bg-color);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--second-bg-color);
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li{
+    margin: 20px 0;
+}
+
+.sidebar ul li a i {
+    font-size: 24px;
+    color: var(--third-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i:hover{
+    color: var(--first-color);
+}
+.top-icon i{
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.spacer{
+    flex: 100%;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.header{
+    height: 35px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.header h2{
+    margin-left: 60px;
+    display: flex;
+    color: var(--third-color);
+}
+
+/* Konten utama */
+.content {
+  margin-left: 80px;
+  padding: 30px;
+}
+
+/* Splitbill box */
+.splitbill {
+  background: var(--third-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px var(--four-color);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.splitbill h2 {
+    margin-top: 10px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.splitbill p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.tutorial-link {
+  color: #4da6ff;
+  font-size: 13px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Scan area */
+.image{
+  font-size: 180px;
+}
+
+.photo-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.photo-btn {
+  display: flex;
+  flex-direction: column; /* bikin ikon & teks stack vertikal */
+  align-items: center;    /* center teks di bawah ikon */
+  cursor: pointer;
+}
+
+.bulat {
+  width: 70px;
+  height: 70px;
+  background: var(--first-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.bulat i {
+  font-size: 30px;
+  color: var(--second-bg-color);
+}
+
+.bulat:hover {
+  background: var(--four-color);
+}
+
+.photo-btn p {
+  margin-top: 5px;
+  font-size: 13px;
+  text-align: center; /* pastikan teks benar-benar di tengah */
+}
+
+#preview {
+  display: none; /* awalnya disembunyikan */
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+#showFoto:checked ~ .hasil-struk #preview {
+  display: block; /* muncul saat checkbox dicentang */
+}
+/* Awal: sembunyikan gambar dan tombol */
+.hasil-struk img,
+.struk {
+  display: none;
+}
+
+/* Munculkan foto & tombol saat checkbox dicentang */
+#showFoto:checked ~ .hasil-struk img,
+#showFoto:checked ~ .hasil-struk .struk {
+  display: block;
+}
+.hasil-struk {
+  display: flex;
+  flex-direction: column;  /* stack vertikal: gambar di atas, tombol di bawah */
+  align-items: center;     /* center horizontal */
+  margin-top: 20px;
+  gap: 15px;               /* jarak antara foto & tombol */
+}
+
+.hasil-struk img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 2px dashed #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.struk .btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* warna tombol */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.struk .btn-primary:hover {
+  background-color: #45a049;
+}
+

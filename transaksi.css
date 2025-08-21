@@ -1,0 +1,154 @@
+:root {
+  --first-color: #f8f2e6;
+  --second-bg-color: #075e54;
+  --third-color: #ffffff;
+  --four-color: #77ff00;
+  --text-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--first-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--second-bg-color);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--second-bg-color);
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a i {
+  font-size: 24px;
+  color: var(--third-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li a i:hover {
+  color: var(--first-color);
+}
+.top-icon i {
+  font-size: 22px;
+  color: var(--text-color);
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 100%;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.header {
+  height: 35px;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.header h2 {
+  margin-left: 60px;
+  display: flex;
+  color: var(--third-color);
+}
+/* styling kotak struk */
+.output {
+  max-width: 380px; /* biar lebar mirip struk HP */
+  margin: 40px auto; /* auto biar selalu ke tengah */
+  background: #fff; /* warna kotaknya putih */
+  padding: 20px;
+  border-radius: 12px; /* sudut melengkung */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* bayangan tipis */
+  font-family: "Roboto", sans-serif;
+}
+
+/* judul atas */
+.output h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+/* baris item */
+.output p,
+.output h4 {
+  display: flex;
+  justify-content: space-between; /* teks kiri dan kanan */
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* angka di kanan */
+.output span {
+  font-weight: 500;
+  color: #111;
+}
+
+/* garis */
+.output hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
+}
+
+/* total tebelan */
+.output h4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+.btn.next {
+  background-color: #1ebe5c; /* hijau WA */
+  color: rgb(22, 35, 148);
+}
+.btn.next:hover {
+  background-color: #e8eeea;
+}

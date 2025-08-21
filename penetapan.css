@@ -1,0 +1,203 @@
+:root {
+  --first-color: #f8f2e6;
+  --second-bg-color: #075e54;
+  --third-color: #ffffff;
+  --four-color: #77ff00;
+  --text-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--first-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--second-bg-color);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--second-bg-color);
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a i {
+  font-size: 24px;
+  color: var(--third-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li a i:hover {
+  color: var(--first-color);
+}
+.top-icon i {
+  font-size: 22px;
+  color: var(--text-color);
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 100%;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.header {
+  height: 35px;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.header h2 {
+  margin-left: 60px;
+  display: flex;
+  color: var(--third-color);
+}
+.penetapan-pilihan {
+  background: var(--third-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px var(--four-color);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.penetapan-pilihan h2 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #131212;
+}
+
+.penetapan-pilihan h2,
+.penetapan-pilihan p {
+  display: flex;
+  justify-content: space-between; /* teks kiri dan kanan */
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.btn-penetapan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e0e0e0; /* abu-abu */
+  padding: 10px 15px;
+  border-radius: 25px; /* biar oval */
+  max-width: 450px;
+  margin: 20px auto; /* tengah */
+  font-family: "Roboto", sans-serif;
+}
+.pilihan-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 14px;
+}
+.pilihan-form input {
+  margin-right: 10px;
+}
+
+.btn-penetapan h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #444;
+  flex: 1; /* isi ruang di tengah */
+  text-align: left;
+}
+
+/* --- FAVORITE LIST (3 kontak horizontal) --- */
+.favorite-list {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.favorite-list .contact {
+  display: flex;
+  flex-direction: column; /* icon di atas, nama di bawah */
+  align-items: center;
+}
+
+.favorite-list .teman i {
+  font-size: 50px;
+  color: #333;
+}
+
+.favorite-list p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+
+/* tombol kembali */
+.btn.back {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.btn.back:hover {
+  background-color: #cfcfcf;
+}
+
+/* tombol next */
+.btn.next {
+  background-color: #25d366; /* hijau WA */
+  color: white;
+}
+.btn.next:hover {
+  background-color: #1ebe5c;
+}
